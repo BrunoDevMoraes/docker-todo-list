@@ -1,7 +1,7 @@
 FROM node:14-alpine
 EXPOSE 3001
 WORKDIR /app
-ENTRYPOINT npm start
+ENTRYPOINT ["npm" "start"]
 
 ADD ./node_modules.tar.gz .
 
